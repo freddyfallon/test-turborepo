@@ -26,6 +26,7 @@ jobs:
         uses: freddyfallon/turbo-remote-cache-action@main
         with:
           storage-provider: 'local'
+          storage-path: '/tmp/turbo-cache'
           team-id: 'test-team'
           
       - name: First build (should miss cache)
