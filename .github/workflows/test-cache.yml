@@ -24,7 +24,7 @@ jobs:
         run: npm install
         
       - name: Start TurboRepo Remote Cache
-        uses: freddy.fallon/turbo-remote-cache-action@main
+        uses: freddyfallon/turbo-remote-cache-action@main
         with:
           storage-provider: 'local'
           team-id: 'test-team'
