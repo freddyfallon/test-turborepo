@@ -46,6 +46,9 @@ jobs:
       - name: Second build (should hit cache)  
         run: npm run build -- --verbosity=2
         
+      - name: Third build (definitely should hit cache)
+        run: npm run build -- --verbosity=2
+        
       - name: Test commands
         run: npm run test
         
