@@ -38,8 +38,13 @@ jobs:
       - name: First build (should miss cache)
         run: npm run build
         
+      - name: Check cache storage
+        run: |
+          echo "Cache storage contents:"
+          ls -la /tmp/turbo-cache/ || echo "Cache directory not found"
+          
       - name: Second build (should hit cache)  
-        run: npm run build
+        run: npm run build -- --verbosity=2
         
       - name: Test commands
         run: npm run test
