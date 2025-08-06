@@ -1,0 +1,9 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Building utils...' && sleep 2 && mkdir -p dist && echo 'Utils built!' > dist/index.js",
+    "test": "echo 'Testing utils...' && sleep 1",
+    "lint": "echo 'Linting utils...'"
+  }
+}

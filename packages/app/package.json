@@ -1,0 +1,9 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Building app...' && sleep 2 && mkdir -p dist && echo 'App built!' > dist/index.js",
+    "test": "echo 'Testing app...' && sleep 1",
+    "lint": "echo 'Linting app...'"
+  }
+}
