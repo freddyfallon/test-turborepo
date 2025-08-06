@@ -29,6 +29,12 @@ jobs:
           storage-path: '/tmp/turbo-cache'
           team-id: 'test-team'
           
+      - name: Check TurboRepo environment
+        run: |
+          echo "TURBO_API: $TURBO_API"
+          echo "TURBO_TOKEN: $TURBO_TOKEN" 
+          echo "TURBO_TEAM: $TURBO_TEAM"
+        
       - name: First build (should miss cache)
         run: npm run build
         
