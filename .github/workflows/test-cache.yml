@@ -22,8 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Start TurboRepo Remote Cache
-        uses: freddyfallon/turbo-remote-cache-action@main
+      - name: 🚀 Launch Cache Rocket
+        uses: freddyfallon/cache-rocket@main
         with:
           storage-provider: 'local'
           storage-path: '/tmp/turbo-cache'
